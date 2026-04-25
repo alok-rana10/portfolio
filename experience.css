@@ -1,0 +1,106 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+}
+
+.logo span{
+  color:#8b5cf6;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#94a3b8;
+}
+
+nav .active{
+  color:#8b5cf6;
+  border-bottom:2px solid #8b5cf6;
+}
+
+/* SECTION */
+.experience{
+  padding:80px 8%;
+}
+
+.experience h1{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:50px;
+}
+
+.experience h1 span{
+  color:#8b5cf6;
+}
+
+/* GRID */
+.container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap:30px;
+}
+
+/* CARD */
+.card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:15px;
+  transition:0.3s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.card:hover{
+  transform:translateY(-10px);
+}
+
+/* TEXT */
+.card h2{
+  color:#8b5cf6;
+}
+
+.role{
+  margin:5px 0 15px;
+  color:#cbd5f5;
+}
+
+.card ul{
+  padding-left:18px;
+  margin-bottom:15px;
+}
+
+.card ul li{
+  margin-bottom:8px;
+  color:#94a3b8;
+}
+
+/* CERTIFICATES */
+.cert h4{
+  margin-bottom:10px;
+}
+
+.cert a{
+  display:block;
+  margin-bottom:6px;
+  text-decoration:none;
+  color:#38bdf8;
+  font-size:14px;
+}
+
+.cert a:hover{
+  color:#8b5cf6;
+}

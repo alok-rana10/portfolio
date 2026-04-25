@@ -1,0 +1,106 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+}
+
+.logo span{
+  color:#8b5cf6;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#94a3b8;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#8b5cf6;
+}
+
+nav .active{
+  color:#8b5cf6;
+  border-bottom:2px solid #8b5cf6;
+}
+
+/* SECTION */
+.skills{
+  padding:80px 8%;
+}
+
+.skills h1{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:50px;
+}
+
+.skills h1 span{
+  color:#8b5cf6;
+}
+
+/* GRID */
+.skills-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:25px;
+}
+
+/* CARD */
+.skill-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:15px;
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+  transition:0.3s;
+}
+
+.skill-card:hover{
+  transform:translateY(-10px);
+}
+
+.skill-card h3{
+  margin-bottom:15px;
+  color:#8b5cf6;
+}
+
+/* SKILL */
+.skill{
+  margin-bottom:15px;
+}
+
+.skill p{
+  margin-bottom:5px;
+  font-size:14px;
+}
+
+/* BAR */
+.bar{
+  width:100%;
+  height:8px;
+  background:#0f172a;
+  border-radius:10px;
+  overflow:hidden;
+}
+
+.bar span{
+  display:block;
+  height:100%;
+  background: linear-gradient(45deg,#8b5cf6,#3b82f6);
+  border-radius:10px;
+}

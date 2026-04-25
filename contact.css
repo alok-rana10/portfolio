@@ -1,0 +1,101 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+}
+
+.logo span{
+  color:#8b5cf6;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#94a3b8;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#8b5cf6;
+}
+
+nav .active{
+  color:#8b5cf6;
+  border-bottom:2px solid #8b5cf6;
+}
+
+/* SECTION */
+.contact{
+  padding:80px 8%;
+}
+
+.contact h1{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:50px;
+}
+
+.contact h1 span{
+  color:#8b5cf6;
+}
+
+/* GRID */
+.contact-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap:25px;
+}
+
+/* CARD */
+.contact-card{
+  background:#1e293b;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+  transition:0.3s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.contact-card:hover{
+  transform:translateY(-10px);
+}
+
+.contact-card h3{
+  margin-bottom:10px;
+  color:#8b5cf6;
+}
+
+.contact-card p{
+  margin-bottom:15px;
+  color:#94a3b8;
+}
+
+/* BUTTON */
+.contact-card a{
+  display:inline-block;
+  padding:8px 16px;
+  background: linear-gradient(45deg,#8b5cf6,#3b82f6);
+  border-radius:8px;
+  color:white;
+  text-decoration:none;
+  font-size:14px;
+}
+
+.contact-card a:hover{
+  opacity:0.8;
+}

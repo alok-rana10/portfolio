@@ -1,0 +1,131 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+}
+
+/* NAVBAR */
+.navbar{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:20px 8%;
+}
+
+.logo span{
+  color:#8b5cf6;
+}
+
+nav a{
+  margin:0 15px;
+  text-decoration:none;
+  color:#94a3b8;
+  transition:0.3s;
+}
+
+nav a:hover{
+  color:#8b5cf6;
+}
+
+nav .active{
+  color:#8b5cf6;
+  border-bottom:2px solid #8b5cf6;
+}
+
+/* SECTION */
+.projects{
+  padding:80px 8%;
+}
+
+.projects h1{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:50px;
+}
+
+.projects h1 span{
+  color:#8b5cf6;
+}
+
+/* GRID */
+.project-container{
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap:25px;
+}
+
+/* CARD */
+.project-card{
+  background:#1e293b;
+  padding:20px;
+  border-radius:15px;
+  transition:0.3s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.project-card:hover{
+  transform:translateY(-10px);
+}
+
+/* FEATURED */
+.featured{
+  border:2px solid #8b5cf6;
+  transform:scale(1.05);
+}
+
+/* TEXT */
+.project-card h3{
+  color:#8b5cf6;
+}
+
+.project-card p{
+  color:#94a3b8;
+  margin:10px 0;
+  line-height:1.5;
+}
+
+/* TAGS */
+.tags{
+  font-size:12px;
+  margin-bottom:15px;
+  color:#38bdf8;
+}
+
+/* BUTTONS */
+.buttons a{
+  display:inline-block;
+  margin-right:10px;
+  padding:8px 14px;
+  border-radius:8px;
+  text-decoration:none;
+  font-size:13px;
+  transition:0.3s;
+}
+
+.buttons a:first-child{
+  background:#8b5cf6;
+  color:white;
+}
+
+.buttons a:last-child{
+  border:1px solid #555;
+  color:white;
+}
+
+.buttons a:hover{
+  opacity:0.8;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+  .projects h1{
+    font-size:32px;
+  }
+}
