@@ -1,0 +1,115 @@
+/* RESET */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:'Segoe UI', sans-serif;
+}
+
+body{
+  background: radial-gradient(circle at top, #0f172a, #020617);
+  color:white;
+}
+
+/* SECTION */
+.certificates{
+  padding:80px 8%;
+}
+
+.certificates h1{
+  text-align:center;
+  font-size:45px;
+  margin-bottom:50px;
+}
+
+.certificates h1 span{
+  color:#8b5cf6;
+}
+
+/* GRID */
+.certificate-container{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.certificate-card{
+  background:#1e293b;
+  border-radius:15px;
+  overflow:hidden;
+  transition:0.3s;
+  box-shadow:0 5px 20px rgba(0,0,0,0.4);
+}
+
+.certificate-card:hover{
+  transform:translateY(-10px);
+}
+
+/* IMAGE */
+.certificate-card img{
+  width:100%;
+  height:220px;
+  object-fit:cover;
+}
+
+/* CONTENT */
+.certificate-content{
+  padding:20px;
+}
+
+.certificate-content h3{
+  color:#8b5cf6;
+  margin-bottom:10px;
+}
+
+.certificate-content p{
+  color:#94a3b8;
+  font-size:14px;
+  line-height:1.5;
+  margin-bottom:15px;
+}
+
+/* BUTTONS */
+.buttons{
+  display:flex;
+  gap:10px;
+}
+
+.buttons a{
+  flex:1;
+  text-align:center;
+  padding:10px;
+  border-radius:8px;
+  text-decoration:none;
+  color:white;
+  transition:0.3s;
+}
+
+/* VIEW BUTTON */
+.view-btn{
+  background:#8b5cf6;
+}
+
+/* DOWNLOAD BUTTON */
+.download-btn{
+  border:1px solid #555;
+}
+
+/* HOVER */
+.buttons a:hover{
+  opacity:0.85;
+}
+
+/* RESPONSIVE */
+@media(max-width:768px){
+
+  .certificates{
+    padding:50px 5%;
+  }
+
+  .certificates h1{
+    font-size:32px;
+  }
+
+}
