@@ -189,6 +189,26 @@ nav .active{
     flex-direction:column;
     text-align:center;
   }
+  nav{
+    flex-direction: column;
+    gap: 15px;
+  }
+  nav ul{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+  .buttons{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:center;
+    gap:15px;
+  }
+  .button a{
+    width: 90px;
+    text-align:center;
+  }
 
   .left h1{
     font-size:40px;
